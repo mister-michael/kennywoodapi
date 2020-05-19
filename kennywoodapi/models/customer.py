@@ -14,4 +14,4 @@ class Customer(models.Model):
         return f'{self.first_name} {self.last_name}'
 
     class Meta:
-        ordering = (F('user.date_joined').asc(nulls_last=True),)
+        ordering = (F('user_id').asc(nulls_last=True),)
